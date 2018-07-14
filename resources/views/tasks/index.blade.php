@@ -27,9 +27,9 @@
                             Wywal
                         </button>
                 </form>
-                @if($task->grey != 1)<form style="float:left; margin:0px 5px 0px 0px" method="POST" action="/tasks/focus/{{$task->id}}">{{ csrf_field() }}{{ method_field('PATCH') }}<button type="submit" class="btn btn-warning btn-sm">Focus</button></form>
-                 <form style="float:left; margin:0px 5px 0px 0px" method="POST" action="/tasks/complete/{{$task->id}}">{{ csrf_field() }}{{ method_field('PATCH') }}<button type="submit" class="btn btn-success btn-sm">Complete</button></form>@endif
-                 <a href="/tasks/edit/{{$task->id}}"><button style="float:left; margin:0px 5px 0px 0px" class="btn btn-default btn-sm">Edytuj</button></a>
+                @if($task->grey != 1)<form style="float:left; margin:0px 5px 0px 0px" method="POST" action="{{route('focus',$task->id)}}">{{ csrf_field() }}{{ method_field('PATCH') }}<button type="submit" class="btn btn-warning btn-sm">Focus</button></form>
+                 <form style="float:left; margin:0px 5px 0px 0px" method="POST" action="{{route('complete', $task->id)}}">{{ csrf_field() }}{{ method_field('PATCH') }}<button type="submit" class="btn btn-success btn-sm">Complete</button></form>@endif
+                 <a href="{{route('edit', $task->id)}}"><button style="float:left; margin:0px 5px 0px 0px" class="btn btn-default btn-sm">Edytuj</button></a>
 
         </div>
         </div>
