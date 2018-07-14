@@ -1,0 +1,50 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+.margindown
+{
+    margin-bottom:10px;
+}
+
+#duze {
+	font-size:20px;
+	}
+
+	#male{
+	font-size:10px;
+	}
+
+
+
+	.modulcytat {
+		position:relative;
+		transition: 2s;
+		margin:0;
+		width:400px;height:200px;
+		background:indigo;
+		border-radius:5%;
+		font-size:20px;
+		color:khaki;
+		padding:30px;
+		font-weight:bold
+	}
+
+	.modulcytat2 {
+		positon:relative;
+		transition: 2s;
+		margin:0;
+		width:400px;height:200px;
+		background:khaki;
+		border-radius:5%;
+		font-size:20px;
+		color:indigo;
+		padding:30px;
+		font-weight:bold
+	}
