@@ -33,8 +33,8 @@
                     <a class="navbar-brand" href="{{ url('/tasks/1') }}">
                         ToDoAppka
                     </a>
-                        <a href="{{ route('index', 1) }}" class="btn btn-danger" style="margin-top:5px">Główne Taski</a>
-                        <a href="{{ route('index', 2) }}" class="btn btn-danger" style="margin-top:5px">Bieżące</a>
+                        <a href="{{ route('index', 1) }}" class="btn btn-danger" style="margin-top:5px">Bieżące</a>
+                        <a href="{{ route('index', 2) }}" class="btn btn-danger" style="margin-top:5px">Main</a>
                         <a href="{{ route('index', 3) }}" class="btn btn-danger" style="margin-top:5px">Laracasty</a>
                         <a href="{{ route('index', 4) }}" class="btn btn-danger" style="margin-top:5px">Projekty</a>
                         <a href="{{ route('index', 5) }}" class="btn btn-danger" style="margin-top:5px">Work</a>
