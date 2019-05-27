@@ -38,6 +38,8 @@
                         <a href="{{ route('index', 3) }}" class="btn btn-danger" style="margin-top:5px">Laracasty</a>
                         <a href="{{ route('index', 4) }}" class="btn btn-danger" style="margin-top:5px">Projekty</a>
                         <a href="{{ route('index', 5) }}" class="btn btn-danger" style="margin-top:5px">Work</a>
+                        <a href="{{ route('index', 7) }}" class="btn btn-danger" style="margin-top:5px">Źródła</a>
+
                         <a style="text-decoration:none;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a>
                         <a href="{{ url('/tasks/completed') }}" class="btn btn-success pull-right" style="margin-top:5px">Completed</a>
                 </div>
@@ -79,10 +81,12 @@
                 </div>
 
         </nav>
+<div class="container">
 
         @if($flash=session('message'))
 <div class="alert alert-success">{{$flash}}</div>
 @endif
+</div>
 
         @yield('content')
     </div>

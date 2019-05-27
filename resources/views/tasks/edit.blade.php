@@ -2,12 +2,7 @@
 @section('content')
 <div class="container">
 
-    @if($flash=session('message'))
-   <div class="row"><div class="col-md-5"><div class="alert alert-success">
-   {{$flash}}
-
-   </div></div></div>
-   @endif
+  
     <div class="col-md-5">
         <h2>Edytuj Task</h2>
 
