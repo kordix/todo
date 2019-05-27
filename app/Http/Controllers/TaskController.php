@@ -32,7 +32,6 @@ class TaskController extends Controller
     }
     public function store(Request $request)
     {
-        $this->middleware('auth');
         $tasks=Task::create([
         'title' => request('title'),
         'channel_id' => request('channelid'),

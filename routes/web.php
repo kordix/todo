@@ -19,14 +19,16 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::resource('channel','ChannelController');
+
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/tasks', 'indexController@index')->name('index');
 Route::get('tasks/completed', 'TaskController@indexcompleted')->name('indexcompleted');
 Route::get('/tasks/{channel}', 'indexController@index')->name('index');
 Route::get('/create', 'TaskController@create')->name('create');
 Route::post('/store', 'TaskController@store')->name('store');
-Route::get('/createchannel', 'TaskController@createchannel')->name('createchannel');
-Route::post('/storechannel', 'TaskController@storechannel')->name('storechannel');
+// Route::get('/createchannel', 'TaskController@createchannel')->name('createchannel');
+// Route::post('/storechannel', 'TaskController@storechannel')->name('storechannel');
 
 Route::get('tasks/edit/{id}', 'TaskController@edit')->name('edit');
 Route::patch('tasks/edit/{id}', 'TaskController@update')->name('update');
